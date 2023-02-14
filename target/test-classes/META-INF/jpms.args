@@ -1,0 +1,4 @@
+--patch-module
+com.jwebmp.plugins.angular.ngxcolorpicker=_
+--add-reads
+com.jwebmp.plugins.angular.ngxcolorpicker=ALL-UNNAMED
