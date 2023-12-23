@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.jwebmp.plugins.angular.ngxcolorpicker","l":"com.jwebmp.plugins.angular.ngxcolorpicker"}];updateSearchResults();
