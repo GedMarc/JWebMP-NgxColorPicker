@@ -2,17 +2,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.guicedee</groupId>
-        <artifactId>dev-kit</artifactId>
+        <groupId>com.jwebmp</groupId>
+        <artifactId>parent</artifactId>
         <version>2.0.0-SNAPSHOT</version>
-        <relativePath>../../../../../../</relativePath>
     </parent>
-    <groupId>com.jwebmp.plugins.angular</groupId>
 
-    <artifactId>ngx-colorpicker</artifactId>
+    <groupId>com.jwebmp.plugins</groupId>
+    <artifactId>angular-colorpicker</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Ngx Color Picker</name>
+    <name>Angular Color Picker</name>
     <description>The JWebMP Implementation for Ngx Color Picker</description>
     <url>https://github.com/GedMarc/JWebMP-NgxColorPicker</url>
 
@@ -21,16 +21,17 @@
         <url>https://github.com/GedMarc/JWebMP-NgxColorPicker.git</url>
     </issueManagement>
   <dependencies>
-  
-        <dependency>
-            <groupId>com.jwebmp.core</groupId>
-            <artifactId>jwebmp-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.jwebmp.plugins.angular</groupId>
-            <artifactId>angularts</artifactId>
-        </dependency>
-    </dependencies>
+      <dependency>
+          <groupId>com.jwebmp.core</groupId>
+          <artifactId>jwebmp-core</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>com.jwebmp.plugins</groupId>
+          <artifactId>typescript-client</artifactId>
+      </dependency>
+
+  </dependencies>
     <scm>
         <url>https://github.com/GedMarc?tab=repositories</url>
     </scm>
