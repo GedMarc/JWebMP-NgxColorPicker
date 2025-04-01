@@ -1,6 +1,7 @@
 package com.jwebmp.plugins.angular.colorpicker;
 
 import com.google.common.base.Strings;
+import com.jwebmp.core.base.angular.client.annotations.references.NgImportModule;
 import com.jwebmp.core.base.angular.client.annotations.references.NgImportReference;
 import com.jwebmp.core.base.angular.client.services.interfaces.INgComponent;
 import com.jwebmp.core.base.html.inputs.InputColourType;
@@ -11,6 +12,7 @@ import java.util.Set;
 
 @NgImportReference(value = "ColorPickerModule", reference = "ngx-color-picker")
 @Getter
+@NgImportModule("ColorPickerModule")
 public class NgxColorPicker<J extends NgxColorPicker<J>> extends InputColourType<J> implements INgComponent<J>
 {
     private String colorBind;
@@ -182,14 +184,6 @@ public class NgxColorPicker<J extends NgxColorPicker<J>> extends InputColourType
         setColorBind(variableName);
         setValue(variableName);
         return (J) this;
-    }
-
-    @Override
-    public Set<String> moduleImports()
-    {
-        Set<String> strings = INgComponent.super.moduleImports();
-        strings.add("ColorPickerModule");
-        return strings;
     }
 
     @Override
